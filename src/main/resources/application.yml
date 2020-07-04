@@ -1,0 +1,7 @@
+spring:
+  datasource:
+    url: 'jdbc:postgresql://localhost:15432/application?user=admin&password=12345'
+
+camunda:
+  bpm:
+    datasource.url: 'jdbc:postgresql://localhost:25432/camunda?user=admin&password=12345'

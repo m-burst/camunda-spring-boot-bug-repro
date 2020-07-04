@@ -1,0 +1,21 @@
+version: '3.7'
+
+services:
+
+  postgres-application:
+    image: postgres:12
+    ports:
+      - "15432:5432"
+    environment:
+      POSTGRES_PASSWORD: 12345
+      POSTGRES_USER: admin
+      POSTGRES_DB: application
+
+  postgres-camunda:
+    image: postgres:12
+    ports:
+     - "25432:5432"
+    environment:
+      POSTGRES_PASSWORD: 12345
+      POSTGRES_USER: admin
+      POSTGRES_DB: camunda
